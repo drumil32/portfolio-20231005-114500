@@ -1,37 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #282c34;
     color: white;
     padding: 1em;
     text-align: center;
 }
 
-nav ul {
+.nav-list {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+.nav-list li {
     display: inline;
     margin-right: 15px;
 }
 
-nav ul li a {
+.nav-list li a {
     color: white;
     text-decoration: none;
 }
 
-main {
+.section {
     padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .project {
@@ -40,9 +41,21 @@ section {
     margin-bottom: 10px;
 }
 
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+}
+
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #333;
+    background-color: #282c34;
     color: white;
+}
+
+@media (max-width: 600px) {
+    .nav-list li {
+        display: block;
+        margin: 5px 0;
+    }
 }

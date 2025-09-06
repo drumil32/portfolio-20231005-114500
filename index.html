@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
         <h1>My Portfolio</h1>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -19,30 +20,37 @@
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="about" class="section">
             <h2>About Me</h2>
-            <p>Hello! I am a passionate web developer.</p>
+            <p>Hi! I am a passionate web developer with a knack for creating dynamic and responsive web applications.</p>
         </section>
-        <section id="projects">
+        <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project Title</h3>
-                <p>Project description goes here.</p>
+                <h3>Project One</h3>
+                <p>A brief description of what the project does.</p>
             </div>
-            <!-- Add more project divs as needed -->
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>A brief description of what the project does.</p>
+            </div>
+            <div class="project">
+                <h3>Project Three</h3>
+                <p>A brief description of what the project does.</p>
+            </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="section">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skill-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <!-- Add more skills as needed -->
+                <li>Responsive Design</li>
             </ul>
         </section>
-        <section id="contact">
+        <section id="contact" class="section">
             <h2>Contact</h2>
-            <form>
+            <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -54,7 +62,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 My Portfolio</p>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
